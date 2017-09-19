@@ -42,6 +42,8 @@ public class JavaFXTask1 extends Application{
         primaryStage.setHeight(400);
 
 
+
+
         Thread thread = new Thread(() -> {
             createRectangles();
         });
@@ -53,17 +55,24 @@ public class JavaFXTask1 extends Application{
     public void createRectangle(){
         Rectangle rectangle = new Rectangle(random.nextInt(50),random.nextInt(20),getColor());
 
-        rectangle.setTranslateX(random.nextInt(50));
-        rectangle.setTranslateY(random.nextInt(50));
+        rectangle.setTranslateX(random.nextInt(100));
+        rectangle.setTranslateY(random.nextInt(100));
 
         Thread thread = new Thread(()->{
         while(true) {
-            final double x = rectangle.getTranslateX() + 2;
-            final double y = rectangle.getTranslateY() + 2;
+            final double x = rectangle.getTranslateX() + random.nextInt(5);
+            final double y = rectangle.getTranslateY() + random.nextInt(10);
 
             Platform.runLater(() -> {
-                rectangle.setTranslateX(x);
-                rectangle.setTranslateY(y);
+                 rectangle.setTranslateX(x);
+                 rectangle.setTranslateY(y);
+               /* while (true){
+                    if (rectangle.getX()+rectangle.getWidth() >= 400 ||
+                            rectangle.getTranslateX() + rectangle.getWidth() <= 0){
+                        rectangle.setX(-rectangle.getX());
+                    }
+
+                }*/
             });
 
             try {
@@ -73,11 +82,13 @@ public class JavaFXTask1 extends Application{
             }
         } });
 
+
         Platform.runLater(() -> {
             root.getChildren().addAll(rectangle);
             thread.start();
         });
     }
+
 
     private Color getColor(){
         Color color = Color.color(random.nextDouble(),
