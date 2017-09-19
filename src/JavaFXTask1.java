@@ -48,17 +48,14 @@ public class JavaFXTask1 extends Application{
         primaryStage.setWidth(400);
         primaryStage.setHeight(400);
 
-
-
-
         Thread thread = new Thread(() -> {
             createRectangles();
         });
-        singleThread.setOnMouseClicked(event -> {
+        multyThreads.setOnMouseClicked(event -> {
             thread.start();
         });
 
-        multyThreads.setOnMouseClicked(event -> {
+        singleThread.setOnMouseClicked(event -> {
             createRectangles2();
         });
     }
@@ -77,13 +74,6 @@ public class JavaFXTask1 extends Application{
             Platform.runLater(() -> {
                  rectangle.setTranslateX(x);
                  rectangle.setTranslateY(y);
-               while (true){
-                    if (rectangle.getX()+rectangle.getWidth() >= 400 ||
-                            rectangle.getTranslateX() + rectangle.getWidth() <= 0){
-                        rectangle.setX(-rectangle.getX());
-                    }
-
-                }
             });
 
             try {
