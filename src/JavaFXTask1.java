@@ -28,10 +28,6 @@ public class JavaFXTask1 extends Application{
     public void start(Stage primaryStage) throws Exception {
 
         Random random = new Random();
-        List<Rectangle> myRectangles2 = new ArrayList<>();
-       // myRectangles2.setTranslateX(10);
-
-
 
         final Button singleThread = new Button("Single Thread");
         final Button multyThreads = new Button("Multy Threads");
