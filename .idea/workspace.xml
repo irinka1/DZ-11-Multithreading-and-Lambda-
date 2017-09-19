@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05639ef8-61a7-4e01-a448-22c15190b00b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/JavaFXTask1.java" afterPath="$PROJECT_DIR$/src/JavaFXTask1.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/TaskLibrary.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,6 +26,18 @@
                 <element signature="imports" expanded="true" />
                 <element signature="e#876#877#0" expanded="true" />
                 <element signature="e#904#905#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TaskLibrary.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/TaskLibrary.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-51">
+              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -62,6 +74,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/JavaFXTask1.java" />
+        <option value="$PROJECT_DIR$/src/TaskLibrary.java" />
       </list>
     </option>
   </component>
@@ -323,6 +336,16 @@
         <state relative-caret-position="340">
           <caret line="103" column="48" lean-forward="true" selection-start-line="103" selection-start-column="42" selection-end-line="103" selection-end-column="48" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TaskLibrary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-51">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
