@@ -1,0 +1,34 @@
+Task - library 1
+Write a program that reads the number of peopleCount and maxAmount from the console.
+Then creates peopleCount streams. Every stream is a person, wants to enter the library.
+The library has a limit of count of people who can simultaneously be in it - maxAmount.
+Each thread should write to the console that it (the person) does.
+    came to the entrance to the library
+    waiting for the entrance to the library (occurs only if there is no place at the time of coming to the library)
+    entered the library
+    reads the book (the thread should do this action randomly the amount of time from 1 to 5 seconds)
+    left the library.
+    
+Task - library 2
+It is necessary to add a door to the program - entrance / exit to the library.
+The door can simultaneously pass 1 flow. Time of passage through the door of the flow = 0.5 seconds).
+There are additional actions on the part of the thread that they should write to the console:
+     went to the door from the street
+     approached the door from the inside
+     passes through the door inside
+     passes through the door to the outside
+     went through the door inside
+     walked through the door outside
+     
+Task - geometry in motion 1
+Create a JavaFX application that has one button and a large empty area.
+The button - "Multy Threads" generates from 3 to 10 rectangles of random color and size. Expose all rectangles to the empty plane of the window. Rectangles can overlap. Each rectangle has a separate stream that moves the rectangle in one of 4 directions
+    Left-up (x-, y-)
+    Right-up (x ++, y-)
+    Left-down (x-, y ++)
+    Right-Down (x ++, y ++)
+When the rectangle collides with the program window's wall, the rectangle fires at the appropriate angle (this will always be + or -90 degrees)
+
+Task - geometry in motion 2
+     Add second button to the application
+     The button is "Single Thread", it creates one additional stream (instead of a set of threads one by one per rectangle) that calculates the movement of each rectangle. Without blocking the main thread.
