@@ -9,10 +9,10 @@ import javafx.stage.Stage;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
-/*Создать JavaFX приложение которое имеет одну кнопку и большую пустую область.
-Кнопка - «Multy Threads» генерирует от 3 до 10 прямоугольников рандомного цвета и размера.
-Выставляет все прямоугольники на пустую плоскость окна. Прямоугольники могут накладываться друг на друга.
- Каждый прямоугольник имеет отдельный поток который двигает прямоугольник в одном из 4 направлений*/
+/*СCreate a JavaFX application that has one button and a large empty area.
+The button - "Multy Threads" generates from 3 to 10 rectangles of random color and size.
+Expose all rectangles to the empty plane of the window. Rectangles can overlap.
+  Each rectangle has a separate stream that moves the rectangle in one of 4 directions*/
 
 
 public class JavaFXTask1 extends Application{
